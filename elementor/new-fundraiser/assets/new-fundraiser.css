@@ -1,0 +1,152 @@
+.new-fundraiser-form .heading {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Steps Bar */
+.new-fundraiser-form .steps .bar {
+    background-color: #ffffff;
+    border: 1px solid #f9f9f9;
+    height: 10px;
+    margin-bottom: 1rem;
+}
+.new-fundraiser-form .steps .progress {
+    background-color: #44c1b2;
+    height: 10px;
+    width: 1%;
+}
+.new-fundraiser-form .steps .current-step {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Questions */
+.new-fundraiser-form .step-wrap > p {
+    text-align: center;
+}
+.new-fundraiser-form .question-wrap {
+    margin-bottom: 1.5rem;
+}
+
+.new-fundraiser-form .label {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.new-fundraiser-form .required {
+    color: #e80000;
+}
+
+.new-fundraiser-form  .fa-info-circle {
+    margin-left: 5px;
+}
+
+.new-fundraiser-form .description {
+    font-size: 12px;
+    margin-bottom: .25rem;
+}
+.new-fundraiser-form .label + .description {
+    font-size: 12px;
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+}
+
+.new-fundraiser-form .radio-wrap,
+.new-fundraiser-form .checkbox-wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: .25rem;
+}
+
+.new-fundraiser-form .radio-wrap input,
+.new-fundraiser-form .checkbox-wrap input {
+    margin-right: 5px;
+}
+
+.new-fundraiser-form .radio-wrap .label,
+.new-fundraiser-form .checkbox-wrap .label {
+    margin: 0;
+}
+
+.new-fundraiser-form .input-wrap input {
+    width: 100%;
+    margin-bottom: .25rem;
+}
+
+.new-fundraiser-form .select-wrap select {
+    width: 100%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #e7efee;
+    border-radius: 24px;
+    -webkit-appearance: none !important;
+    background: #fafafa url("data:image/svg+xml;utf8,<svg viewBox='0 0 140 140' width='16' height='16' xmlns='http://www.w3.org/2000/svg'><g><path d='m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z' fill='black'/></g></svg>") no-repeat right 20px top 50%;
+}
+
+.new-fundraiser-form input.error,
+.new-fundraiser-form select.error,
+.new-fundraiser-form textarea.error{
+    border-color: #e80000 !important;
+}
+
+.new-fundraiser-form .error-message {
+    color: #e80000;
+    font-size: 14px;
+}
+
+.new-fundraiser-form .filepond--item {
+    width: 100%;
+    height: 220px;
+}
+@media (min-width: 30em) {
+    .new-fundraiser-form .filepond--item {
+        width: calc(50% - 0.5em);
+    }
+}
+
+.new-fundraiser-form .filepond--credits {
+    display: none;
+}
+
+    /* Actions */
+.new-fundraiser-form .actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.new-fundraiser-form .actions .prev {
+    background-color: #999999;
+}
+
+.new-fundraiser-form .actions .next {
+    margin-left: auto;
+}
+.new-fundraiser-form .actions .next.disabled {
+    opacity: .5;
+    cursor: not-allowed;
+
+    -webkit-animation: pulse 3s infinite ease-in-out;
+    -o-animation: pulse 3s infinite ease-in-out;
+    -ms-animation: pulse 3s infinite ease-in-out;
+    -moz-animation: pulse 3s infinite ease-in-out;
+    animation: pulse 3s infinite ease-in-out;
+}
+
+@-webkit-keyframes pulse {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+
+@keyframes pulse {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+
+.tippy-box {
+    max-width: 600px !important;
+}
