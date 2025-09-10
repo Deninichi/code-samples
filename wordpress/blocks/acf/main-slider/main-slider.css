@@ -1,0 +1,189 @@
+.main-slider-swiper {
+    width: 100vw;
+    height: 550px;
+}
+
+.main-slider-swiper .slide-btn {
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.main-slider-swiper .swiper-pagination[data-main-slider-pagination] {
+    right: 2rem;
+    bottom: 2rem;
+    left: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: auto;
+}
+
+/* stylelint-disable */
+.main-slider-swiper [data-main-slider-pagination] .swiper-pagination-bullet {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    padding-top: 3px;
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    border: 2px solid rgb(178, 178, 178, 0.6);
+    background-color: transparent;
+}
+/* stylelint-enable */
+
+[data-main-slider-slide] {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 3rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+[data-main-slider-slide].main-slider-slide--content {
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3rem;
+}
+
+.main-slider-slide__content {
+    max-width: 40rem;
+}
+
+.main-slider-slide__mobile_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+}
+
+.main-slider-slide__title {
+    margin: 1.5rem 0;
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: #7a7a7a 1px 0 10px;
+}
+
+.main-slider-slide__description {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: #7a7a7a 1px 0 10px;
+}
+
+.main-slider-swiper .animate-item {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.main-slider-swiper .swiper-slide-active .animate-item {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.main-slider-swiper .custom-cursor {
+    position: absolute;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+    background-color: var(--bg-gray-color);
+    pointer-events: none;
+    opacity: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translate(-50%, -50%);
+}
+
+.main-slider-swiper .autoplay-progress {
+    position: absolute;
+    right: -5px;
+    bottom: -5px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.6rem;
+    height: 4.6rem;
+    font-weight: bold;
+    color: var(--swiper-theme-color);
+}
+
+/* stylelint-disable */
+.main-slider-swiper .autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 2px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+}
+/* stylelint-enable */
+
+.main-slider-swiper .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) .autoplay-progress {
+    display: none;
+}
+
+.main-slider-swiper .swiper-pagination-bullet .autoplay-progress {
+    right: -4px;
+    bottom: -3px;
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+.main-slider-swiper .swiper-pagination-bullet .autoplay-progress svg {
+    stroke-width: 4px;
+    stroke: #ffffff;
+}
+
+@media screen and (min-width: 769px) {
+    .main-slider-slide__mobile_image {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    [data-main-slider-slide] {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 5rem;
+    }
+
+    [data-main-slider-slide].main-slider-slide {
+        background-image: none !important; 
+    }
+
+    .main-slider-slide__title {
+        font-size: 2rem;
+    }
+
+    [data-main-slider-slide] .custom-button {
+        min-width: 9rem;
+        padding: 1rem;
+    }
+}

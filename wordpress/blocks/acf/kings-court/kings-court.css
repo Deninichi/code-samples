@@ -1,0 +1,66 @@
+.kings-court {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+    background-image: url('../../assets/images/blue-american-flag.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.kings-court__wrapper {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.kings-court__logo {
+    width: 13rem;
+    height: 13rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2.75rem;
+}
+
+.kings-court__title {
+    margin-bottom: 2.5rem;
+    font-family: "Barlow Condensed", sans-serif;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--bg-white-color);
+}
+
+.kings-court__content {
+    font-size: 1.125rem;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--bg-white-color);
+}
+
+@media (min-width: 767px) {
+    .kings-court {
+        padding-top: 7.5rem;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+        background-image: unset;
+    }
+
+    .kings-court__wrapper {
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .kings-court__logo {
+        margin-bottom: 2rem;
+    }
+
+    .kings-court__title {
+        margin-bottom: 2rem;
+        color: var(--font-color);
+    }
+
+    .kings-court__content {
+        line-height: 1.4;
+        color: var(--font-color-description);
+    }
+}

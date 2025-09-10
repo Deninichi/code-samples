@@ -1,0 +1,148 @@
+.about-hero-section {
+    background-color: var(--bg-gray-color);
+}
+
+.find-a-store {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    background-color: var(--bg-gray-color);
+}
+
+.about-hero__wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.about-hero__content {
+    position: relative;
+    padding-bottom: 1.5rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.about-hero__caption {
+    display: none;
+}
+
+.about-hero__title {
+    padding-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-family: "Barlow Condensed", sans-serif;
+    line-height: 1.1;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.about-hero__paragraph {
+    margin-bottom: 2rem;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--font-color-description);
+}
+
+.about-hero__image-left {
+    display: none;
+}
+
+.about-hero__image-right {
+    display: none;
+}
+
+@media (min-width: 991px) {
+    .about-hero-section {
+        padding-top: 3rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-bottom: 4rem;
+    }
+
+    .about-hero__image-left {
+        position: absolute;
+        bottom: 4rem;
+        left: 0;
+        overflow: hidden;
+        display: block;
+        width: 12rem;
+        height: 12rem;
+        border-radius: 100%;
+    }
+
+    .about-hero__image-right  {
+        position: absolute;
+        top: 0;
+        right: 0;
+        overflow: hidden;
+        display: block;
+        width: 12rem;
+        height: 12rem;
+        border-radius: 100%;
+    }
+
+    .about-hero__title {
+        padding-top: 0;
+        text-align: center;
+    }
+
+    .about-hero__content {
+        width: 100%;
+        max-width: 50%;
+        min-height: 30rem;
+    }
+
+    .about-hero__caption {
+        display: block;
+        margin-bottom: 0.25rem;
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 1.125rem;
+        font-weight: 700;
+        line-height: 1.5;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--brand-red-color);
+    }
+
+    .about-hero__content::before {
+        content: url('../../assets/images/blocks/about-hero/svg/left-blow.svg');
+        position: absolute;
+        top: 0;
+        left: -13rem;
+    }
+
+    .about-hero__content::after {
+        content: url('../../assets/images/blocks/about-hero/svg/right-blow.svg');
+        position: absolute;
+        right: -12rem;
+        bottom: -1rem;
+    }
+}
+
+@media (min-width: 1600px) {
+    .about-hero-section {
+        padding-top: 7rem;
+        padding-left: 4.5rem;
+        padding-right: 4.5rem;
+    }
+
+    .about-hero__content {
+        width: 100%;
+        max-width: 50rem;
+        min-height: 30rem;
+    }
+
+    .about-hero__title {
+        margin-bottom: 1rem;
+    }
+
+    .about-hero__image-left {
+        left: 4vw;
+        width: 14rem;
+        height: 14rem;
+    }
+
+    .about-hero__image-right {
+        right: 4vw;
+        width: 14rem;
+        height: 14rem;
+    }
+}

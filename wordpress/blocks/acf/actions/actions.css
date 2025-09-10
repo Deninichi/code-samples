@@ -1,0 +1,76 @@
+.actions-section {
+    background-color: var(--bg-gray-color);
+}
+
+.actions-section .marquee__items svg:nth-of-type(2n) path {
+    fill: var(--brand-blue-color);
+    stroke: transparent;
+}
+
+.actions-section.simple-view {
+    background-color: transparent;
+}
+
+.actions {
+    padding-top: 0rem;
+    padding-bottom: 1rem;
+}
+
+.actions-section.simple-view .actions {
+    padding-top: 0;
+}
+
+.actions__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.actions__list li {
+    width: calc(100% / 2 - 0.5rem);
+}
+
+.actions__list .banner-item {
+    height: 0rem;
+}
+
+.actions__list .banner-item__wrapper {
+    align-items: center;
+    padding: 1rem;
+}
+
+.actions__list .banner-item__logo {
+    width: 0rem;
+}
+
+@media (min-width: 991px) {
+    .actions {
+        padding-top:0rem;
+        padding-bottom: 1.2rem;
+    }
+
+    .actions__list {
+        flex-wrap: nowrap;
+        gap: 2rem;
+    }
+
+    .actions__list li {
+        width: calc(100% / 4 - 1rem);
+    }
+
+    .actions__list .banner-item {
+        height: 28rem;
+    }
+
+    .actions__list .banner-item__wrapper {
+        align-items: flex-start;
+        padding-top: 1rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-bottom: 2rem;
+    }
+
+    .actions__list .banner-item__logo {
+        width: 0rem;
+    }
+}

@@ -1,0 +1,143 @@
+.careers {
+    background-color: var(--bg-gray-color);
+}
+
+.careers__main {
+    width: 100%;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.careers__title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.careers__list .resumator-job-title {
+    padding: 0;
+    margin: 0;
+}
+
+.careers__list {
+    padding-bottom: 1.5rem;
+}
+
+.careers__list .resumator-job {
+    border-bottom: 1px solid var(--border-grey-color);
+}
+
+.careers__list .resumator-job-title {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    border: 0;
+}
+
+.careers__list .resumator-job-location {
+    font-family: 'Sofia Pro', sans-serif;
+    font-weight: 700;
+}
+
+.careers__list .resumator-job-department {
+    margin-left: 0;
+    font-family: 'Sofia Pro', sans-serif;
+}
+
+.careers__list .resumator-job-link {
+    width: 100%;
+    height: 100%;
+    max-height: 3.75rem;
+    color: var(--bg-white-color);
+}
+
+.careers__list a {
+    display: flex;
+    justify-content: center;
+}
+
+.careers__list .resumator-job-view-details {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.careers__list .resumator-job-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    max-width: 100%;
+    gap: 0.5rem;
+}
+
+.careers__list .resumator-job-info > * {
+    text-transform: capitalize;
+}
+
+.careers__list .resumator-job-info > *:nth-child(1),
+.careers__list .resumator-job-info > *:nth-child(3) {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.careers__list .resumator-job-info > *::nth-child(2),
+.careers__list .resumator-job-info > *::nth-child(4) {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+@media (min-width: 767px) {
+    .careers__title {
+        margin-bottom: 4rem;
+        font-size: 4rem;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .careers__list {
+        padding-bottom: 4rem;
+    }
+
+    .careers__list .resumator-job {
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid var(--border-grey-color);
+    }
+
+    .careers__list .resumator-job-title {
+        margin-top: 3rem;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    .careers__list .resumator-job-location {
+        font-size: 1.125rem;
+    }
+
+    .careers__list .resumator-job-department {
+        font-size: 1.125rem;
+    }
+
+    .careers__list .resumator-job-view-details {
+        position: relative;
+        bottom: 2.5rem;
+        display: flex;
+        flex-direction: row-reverse;
+        clear: none;
+        padding: 0;
+        margin-top: 1rem;
+    }
+
+    .careers__list .resumator-job-link {
+        max-width: 20rem;
+        color: var(--bg-white-color);
+    }
+
+    .careers__list .resumator-job-info {
+        max-width: 50%;
+    }
+}
